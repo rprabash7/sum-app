@@ -6,6 +6,6 @@ def sum_view(request):
         num1 = int(request.POST.get('num1', 0))
         num2 = int(request.POST.get('num2', 0))
         result = num1 + num2
-        return HttpResponse(f"మొత్తం: {result}")
+        return HttpResponse(f"Views: {result}")
     template = loader.get_template('sum.html')
     return HttpResponse(template.render({}, request))
