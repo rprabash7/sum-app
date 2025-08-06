@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>సమ్ ఆఫ్ టూ నంబర్స్</title>
+</head>
+<body>
+    <h1>రెండు సంఖ్యల మొత్తం</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>మొదటి సంఖ్య:</label>
+        <input type="number" name="num1" required><br><br>
+        <label>రెండవ సంఖ్య:</label>
+        <input type="number" name="num2" required><br><br>
+        <button type="submit">మొత్తం కనుగొను</button>
+    </form>
+</body>
+</html>
